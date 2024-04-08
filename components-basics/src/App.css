@@ -40,3 +40,9 @@
 .read-the-docs {
   color: #888;
 }
+
+.app {
+  background-color: rgb(0, 113, 189);
+  padding: 10%;
+  border-radius: 3vh;
+}
