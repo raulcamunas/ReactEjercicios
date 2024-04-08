@@ -1,15 +1,20 @@
-import { useState } from 'react'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
-  let now = new Date();
-  let time = <p>{now < 12 ? "Good morning" : "Good afternoon"}</p>
+  let now = new Date().getHours;
+  let time;
+    if (now <= 12 && now >= 6) {
+    time = <p>Good morning</p>;
+  } else if (now > 12 && now < 20) {
+    time = <p>Good afternoon</p>;
+  } else {
+    time = <p>Good night</p>;
+  }
+
   return (
     <>
-      <h1>{time}</h1>
-    </>
+      <h1><p>{time}</p></h1>    </>
   )
 }
 
