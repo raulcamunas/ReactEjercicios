@@ -26,9 +26,11 @@ const Card = () => {
                     <li key={id}>
                         <div>
                             <h2>{name}</h2>
-                            <img src={image} alt={name} />
-                            <p>Estado: {status}</p>
-                            <p>Origen: {origin.name}</p>
+                            <img src={image} alt={name} className='imagen'/>
+                            <div className='datos'>
+                                <p>Estado: {status}</p>
+                                <p>Origen: {origin.name}</p>
+                            </div>
                         </div>
                     </li>
                 ))}
